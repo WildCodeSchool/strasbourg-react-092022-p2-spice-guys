@@ -1,19 +1,14 @@
 import React from "react";
-import { Box } from "@mui/material";
-import MediaControlCard from "./MediaControlCard";
+import SearchPlaylists from "./SpotifyApp/SearchPlaylists";
+// import Login from "./SpotifyApp/Login";
+import EmbedPlayer from "./SpotifyApp/EmbedPlayer";
 
 function SpotifyApp() {
   return (
-    <Box
-      sx={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "flex-end",
-        minHeight: "100vh",
-      }}
-    >
-      <MediaControlCard />
-    </Box>
+    <div>
+      <SearchPlaylists />
+      <EmbedPlayer />
+    </div>
   );
 }
 

@@ -8,21 +8,26 @@ import CocktailCard from "./caroussel/CocktailCard";
 function CocktailList({ cocktailApiItems, listAlcool }) {
   return (
     <div
-      id="Scroll"
+      id="cocktail"
       className="Cocktails"
       style={{
-        height: "75vh",
-        paddingLeft: "1rem",
         backgroundColor: "inherit",
+        marginTop: "2rem",
+        paddingLeft: "1rem",
       }}
     >
-      <Typography variant="h4">
-        <LocalBarIcon style={{ backgrounColor: "inherit" }} />
+      <Typography
+        variant="h3"
+        style={{ display: "flex", alignItems: "center" }}
+        sx={{ color: "secondary.main" }}
+      >
+        <LocalBarIcon fontSize="Large" />
         Cocktail à savourer
       </Typography>
       <Stack
         style={{
-          height: "65vh",
+          height: "55vw",
+          marginTop: "1rem",
           overflowX: "scroll",
           alignItems: "center",
         }}
