@@ -10,7 +10,15 @@ import CloseIcon from "@mui/icons-material/Close";
 import Divider from "@mui/material/Divider";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
-import { flexbox } from "@mui/system";
+import { styled } from '@mui/material/styles';
+import { red, green, blue } from '@mui/material/colors';
+
+const Root = styled('div')(({ theme }) => ({
+  padding: theme.spacing(1),
+  [theme.breakpoints.down('sm')]: {
+    display:'none',
+  }
+}));
 
     export default function Menuburger() {
       const [open, setState] = useState(false);
@@ -26,6 +34,7 @@ import { flexbox } from "@mui/system";
       
       
       return (
+        <Root>
           <AppBar position="fixed" sx={{width:"8%", height: "100%", display:"flex", alignItems:"center", backgroundColor: "#C2A835"}} >
           <Container sx={{bgcolor: "#C2A835"}}>
             <Toolbar sx={{display:"flex",justifyContent: "center", alignItems:"center", padding:"0", marginRight:"1rem"}}>
@@ -100,5 +109,6 @@ import { flexbox } from "@mui/system";
             </Toolbar>
           </Container>
         </AppBar>
+      </Root>
       );
     }
