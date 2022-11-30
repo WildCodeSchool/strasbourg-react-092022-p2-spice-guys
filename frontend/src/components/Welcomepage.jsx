@@ -24,6 +24,7 @@ function Welcomepage() {
 
   return (
     <div
+      className="mobilebackground"
       style={{
         display: "flex",
         flexDirection: "column",
@@ -67,7 +68,7 @@ function Welcomepage() {
                 textAlign: "center",
                 alignItems: "center",
                 marginBottom: "1rem",
-                marginTop: "2rem",
+                marginTop: "0.5rem",
               }}
               id="playlist"
             >
