@@ -79,6 +79,7 @@ export default function Home() {
           sx={{ color: "secondary.main" }}
           style={{
             marginTop: "1rem",
+            marginBottom: "2rem",
             marginLeft: "1rem",
             width: "80vw",
           }}
@@ -131,6 +132,7 @@ export default function Home() {
               <TextField
                 {...params}
                 label="Choisir un pays"
+                style={{ backgroundColor: "white" }}
                 inputProps={{
                   ...params.inputProps,
                   autoComplete: "new-password",
@@ -141,7 +143,11 @@ export default function Home() {
                 sx={{ borderRadius: "20px", m: "0.3rem" }}
                 variant="outlined"
                 type="submit"
-                style={{ color: "#FFF5EC", backgroundColor: "#C2A835" }}
+                style={{
+                  color: "#FFF5EC",
+                  backgroundColor: "#C2A835",
+                  marginTop: "1rem",
+                }}
               >
                 C'est Party!
               </Button>
